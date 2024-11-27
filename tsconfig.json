@@ -1,0 +1,18 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+	  "allowJs": true,                      // Permite archivos JavaScript
+	  "checkJs": true,                      // Habilita chequeo de errores en archivos JavaScript
+	  "esModuleInterop": true,              // Compatible con módulos ES6
+	  "forceConsistentCasingInFileNames": true, // Case sensitive para nombres de archivos
+	  "resolveJsonModule": true,            // Permite importar JSON
+	  "skipLibCheck": true,                 // Evita verificar tipos de bibliotecas
+	  "sourceMap": true,                    // Genera mapas de fuente para depuración
+	  "strict": true,                       // Activa configuraciones estrictas de TypeScript
+	  "moduleResolution": "bundler",       // Resolución de módulos para Vite/SvelteKit
+	  "types": ["vite/client"]              // Asegura soporte para Vite
+	},
+	"include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+	"exclude": ["node_modules", ".svelte-kit", "build"]
+  }
+  
